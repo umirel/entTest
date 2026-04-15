@@ -1,0 +1,43 @@
+1)
+Metodo clasificarEdad clasifica una edad en diferentes etapas de la vida.
+
+Entradas:
+int edad
+
+Salidas:
+siguentes strings:
+- "Infancia"
+- "Niñez"
+- "Adolescencia"
+- "Juventud"
+- "Adultez"
+- "Vejez"
+
+Excepcion:
+Si edad < 0 => IllegalArgumentException
+
+Casos:
+- edad negativa
+- diferentes rangos de edad
+- casos límite (6, 12, 18, 25, 60)
+
+
+2)
+Numero decisiones:
+edad < 0, 6, 12, 18, 25, 60 => 1
+
+Total: 6
+
+TM = 6 + 1 = 7
+
+
+3)
+ID     Descripcion                     Entrada   Esperado
+1	   Edad negativa                  -1        Exception
+2	   Infancia                       3         Infancia
+3	   Límite Infancia/Niñez          6         Niñez
+4	   Niñez                          10        Niñez
+5	   Adolescencia                   15        Adolescencia
+6	   Juventud                       20        Juventud
+7	   Adultez                        30        Adultez
+8	   Vejez                          65        Vejez

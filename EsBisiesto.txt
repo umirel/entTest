@@ -1,0 +1,36 @@
+1)
+Método esBisiesto determina si un año es bisiesto.
+
+Entradas:
+int anyo
+
+Salidas:
+boolean - true si es bisiesto, false si no
+
+Reglas:
+- divisible por 4 y no por 100
+- o divisible por 400
+
+Casos:
+- divisible por 4 y no por 100
+- divisible por 100 y no por 400
+- divisible por 400
+- no divisible por 4
+
+2)
+Número de decisiones:
+anyo % 4 == 0 => 1
+anyo % 100 != 0 => 1
+anyo % 400 == 0 => 1
+
+Total: 3
+
+TM = 3 + 1 = 4
+
+3)
+ID     Descripción                              Entrada   Esperado
+1      Divisible por 4 y no por 100             2024      true
+2      Divisible por 100 pero no por 400        1900      false
+3      Divisible por 400                        2000      true
+4      No divisible por 4                       2023      false
+

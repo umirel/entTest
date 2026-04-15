@@ -1,0 +1,30 @@
+1)
+Metodo contarPositivos cuenta cuantos números positivos hay en un array.
+
+Entradas:
+int[] datos
+
+Salidas:
+int cantidad de valores mayores que 0
+
+Casos:
+- array vacío
+- todos los valores negativos
+- mezcla de positivos, negativos y ceros
+
+
+2)
+Número de decisiones:
+for => 1
+if (datos[i] > 0) => 1
+
+Total: 2
+
+TM = 2 + 1 = 3
+
+
+3)
+ID     Descripción                     Entrada                Esperado
+1	   Array vacío                     {}                     0
+2	   Todos negativos                 {-3, -1, -7}           0
+3	   Mezcla de valores               {-2, 0, 5, 3, -1}      2

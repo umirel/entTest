@@ -1,0 +1,46 @@
+1)
+Metodo calificacion convierte una nota numérica (0–10) en una calificación textual.
+
+Entradas:
+int nota
+
+Salidas:
+String:
+- "SUSPENSO"
+- "SUFICIENTE"
+- "BIEN"
+- "NOTABLE"
+- "SOBRESALIENTE"
+
+Excepción:
+Si nota < 0 o nota > 10 => IllegalArgumentException
+
+Casos:
+- nota invalida
+- cada grupo del switch
+- casos límite (0, 4, 5, 6, 7, 8, 9, 10)
+
+2)
+Número de decisiones:
+if (nota < 0 || nota > 10) => 1
+
+Switch:
+SUSPENSO => 1
+SUFICIENTE => 1
+BIEN => 1
+NOTABLE => 1
+SOBRESALIENTE => 1
+
+Total: 6
+
+TM = 6 + 1 = 7
+
+3)
+ID     Descripción             Entrada   Esperado
+1      Nota inválida (-1)      -1        Exception
+2      Nota inválida (11)      11        Exception
+3      SUSPENSO                3         SUSPENSO
+4      SUFICIENTE              5         SUFICIENTE
+5      BIEN                    6         BIEN
+6      NOTABLE                 7         NOTABLE
+7      SOBRESALIENTE           9         SOBRESALIENTE

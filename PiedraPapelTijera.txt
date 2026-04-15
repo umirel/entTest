@@ -1,0 +1,42 @@
+1)
+Método jugar simula una partida de Piedra-Papel-Tijera entre dos jugadores.
+
+Entradas:
+String jugador1
+String jugador2
+
+Valores posibles:
+- "PIEDRA"
+- "PAPEL"
+- "TIJERA"
+
+Salidas:
+- "EMPATE"
+- "GANA JUGADOR 1"
+- "GANA JUGADOR 2"
+
+Excepción:
+Si alguna jugada no es válida => IllegalArgumentException
+
+Casos:
+- jugada inválida
+- empate
+- gana jugador 1
+- gana jugador 2
+
+2)
+Número de decisiones:
+validación de jugadas => 1
+empate => 1
+condición de victoria jugador 1 => 1
+
+Total: 3
+
+TM = 3 + 1 = 4
+
+3)
+ID     Descripción               Entrada                  Esperado
+1      Jugada inválida           ("PIEDRA","FUEGO")       Exception
+2      Empate                    ("PAPEL","PAPEL")        EMPATE
+3      Gana jugador 1            ("PIEDRA","TIJERA")      GANA JUGADOR 1
+4      Gana jugador 2            ("PAPEL","TIJERA")       GANA JUGADOR 2
